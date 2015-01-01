@@ -52,4 +52,5 @@ docs/_build/
 
 # PyBuilder
 target/
->>>>>>> 7f2cb5cc7430d77785d89ac512ba7808e36c03dd
+
+venv/
