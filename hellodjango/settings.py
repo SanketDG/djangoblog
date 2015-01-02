@@ -1,5 +1,5 @@
 """
-Django settings for djangoblog project.
+Django settings for hellodjango project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.7/topics/settings/
@@ -49,9 +49,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'djangoblog.urls'
+ROOT_URLCONF = 'hellodjango.urls'
 
-WSGI_APPLICATION = 'djangoblog.wsgi.application'
+WSGI_APPLICATION = 'hellodjango.wsgi.application'
 
 
 # Database

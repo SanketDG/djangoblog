@@ -6,6 +6,8 @@ A simple text-only blog that was built using Django and Python
 
 [sanketblog.herokuapp.com](http://sanketblog.herokuapp.com)
 
-### Bugs
+### Install
 
-Foreman doesn't seem to be working.
+1. Clone the repo
+2. Install dependencies from requirements.txt
+3. Cd to the direcoty and run `foreman start`
