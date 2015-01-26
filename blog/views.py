@@ -7,7 +7,7 @@ from django.contrib.auth.decorators import login_required
 
 def post_list(request):
     posts = Post.objects.filter(
-        published_date__isnull=False).order_by('published_date')
+        published_date__isnull=False).order_by('published_date').reverse()
     return render(request, 'blog/post_list.html', {'posts': posts})
 
 
