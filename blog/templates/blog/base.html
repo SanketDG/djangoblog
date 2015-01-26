@@ -11,11 +11,15 @@
 </head>
 <body>
 	<div class="page-header">
-		<a href="/admin/" class="top-menu"><span class="glyphicon glyphicon-log-in"></span>
+	{% if user.is_authenticated %}
+		<p class="text-right">Hello {{ user.username }}<small>(<a href="{% url 'django.contrib.auth.views.logout' %}">Log out</a>)</small></p>
 		<a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+		{% else %}
+		<a href="{% url 'django.contrib.auth.views.login' %}" class="top-menu"><span class="glyphicon glyphicon-log-in"></span></a>
+		{% endif %}
 		<h1><a href="/">Django Blog</a></h1>
 	</div>
-	
+
 	<div class="content container">
 		<div class="row">
 			<div class="col-md-8">
@@ -24,6 +28,6 @@
 			</div>
 		</div>
 	</div>
-	
+
 </body>
 </html>
