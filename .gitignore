@@ -53,4 +53,9 @@ docs/_build/
 # PyBuilder
 target/
 
+# Virtual Environments
 venv/
+
+#Sublime projects
+*.sublime-project
+*.sublime-workspace
