@@ -10,6 +10,7 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+import dj_database_url
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
@@ -85,8 +86,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # Parse database configuration from $DATABASE_URL
-import dj_database_url
-DATABASES['default'] =  dj_database_url.config(default='postgres://sanket:kamehameha@localhost:5432/mydb')
+DATABASES['default'] = dj_database_url.config(
+    default='postgres://sanket:kamehameha@localhost:5432/mydb')
 
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
