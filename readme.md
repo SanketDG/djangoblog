@@ -1,6 +1,7 @@
 # Django Blog
 
-A simple text-only blog that was built using Django and Python
+A simple text-only blog that was built using Django.
+Uses [django_admin_bootstrapped](https://github.com/django-admin-bootstrapped/django-admin-bootstrapped) for the admin interface.
 
 ### Demo
 
